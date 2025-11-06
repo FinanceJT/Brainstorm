@@ -1,0 +1,364 @@
+/* Visualization Page Styles */
+
+.viz-page {
+    background: var(--bg);
+}
+
+/* Header */
+.viz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) 0;
+}
+
+.back-link,
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.9375rem;
+    color: var(--text);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s var(--ease);
+    font-family: var(--font-system);
+}
+
+.back-link:hover,
+.share-btn:hover {
+    background: var(--white);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Number Hero */
+.number-hero {
+    text-align: center;
+    padding: var(--space-xl) 0;
+}
+
+.number-display-large {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--primary);
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-md);
+    line-height: 1;
+}
+
+.number-description {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/* Visualizations Grid */
+.visualizations {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding: var(--space-lg) 0;
+}
+
+/* Visualization Card */
+.viz-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: var(--space-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s var(--ease);
+}
+
+.viz-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.viz-header-card {
+    margin-bottom: var(--space-lg);
+}
+
+.viz-header-card h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: var(--space-xs);
+}
+
+.viz-subtitle {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.viz-content {
+    /* Container for visualization content */
+}
+
+/* Time Scale Visualization */
+.time-display {
+    margin-bottom: var(--space-lg);
+}
+
+.time-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-mono);
+}
+
+.time-breakdown {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.counter-demo {
+    background: var(--bg);
+    padding: var(--space-lg);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.counter-label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-xs);
+}
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--primary);
+    margin-bottom: var(--space-md);
+}
+
+.counter-progress {
+    width: 100%;
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: var(--space-sm);
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    width: 0%;
+    transition: width 1s linear;
+}
+
+.counter-info {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Physical Space Visualization */
+.physical-comparisons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.comparison-item {
+    text-align: center;
+    padding: var(--space-md);
+    background: var(--bg);
+    border-radius: 12px;
+}
+
+.comparison-label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-xs);
+}
+
+.comparison-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.cube-viz {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 1.125rem;
+    text-align: center;
+    padding: var(--space-lg);
+}
+
+/* Comparative Scale Visualization */
+.comparison-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.comparison-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.comparison-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.comparison-bar-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.comparison-bar-value {
+    font-size: 0.875rem;
+    font-family: var(--font-mono);
+    color: var(--text-light);
+}
+
+.comparison-bar-container {
+    height: 40px;
+    background: var(--bg);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.comparison-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    border-radius: 8px;
+    transition: width 1s var(--ease);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: var(--space-sm);
+}
+
+.comparison-bar-fill.full {
+    background: var(--primary);
+}
+
+.comparison-bar-multiplier {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+/* Human Scale Visualization */
+.human-comparisons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.human-comparison-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--bg);
+    border-radius: 12px;
+}
+
+.human-comparison-icon {
+    font-size: 2rem;
+    min-width: 48px;
+    text-align: center;
+}
+
+.human-comparison-content {
+    flex: 1;
+}
+
+.human-comparison-text {
+    font-size: 1.125rem;
+    color: var(--text);
+    margin-bottom: var(--space-xs);
+}
+
+.human-comparison-detail {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.human-comparison-value {
+    font-weight: 700;
+    color: var(--accent);
+    font-family: var(--font-mono);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .number-display-large {
+        font-size: 3rem;
+    }
+
+    .time-value {
+        font-size: 2rem;
+    }
+
+    .physical-comparisons {
+        grid-template-columns: 1fr;
+    }
+
+    .viz-card {
+        padding: var(--space-md);
+    }
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.viz-card {
+    animation: slideUp 0.6s var(--ease) backwards;
+}
+
+.viz-card:nth-child(1) { animation-delay: 0.1s; }
+.viz-card:nth-child(2) { animation-delay: 0.2s; }
+.viz-card:nth-child(3) { animation-delay: 0.3s; }
+.viz-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Pulse animation for counter */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.counter {
+    animation: pulse 1s var(--ease) infinite;
+}
