@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize - Scale</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/visualizations.css">
+</head>
+<body class="viz-page">
+    <div class="container">
+        <!-- Header -->
+        <header class="viz-header">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 16L7 10L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back
+            </a>
+            <button class="share-btn" id="shareBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 7L16 5L14 3M16 5H9C6.79086 5 5 6.79086 5 9V10M6 13L4 15L6 17M4 15H11C13.2091 15 15 13.2091 15 11V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Share
+            </button>
+        </header>
+
+        <!-- Number Display -->
+        <section class="number-hero">
+            <div class="number-display-large">
+                <span id="numberDisplay">...</span>
+            </div>
+            <p class="number-description" id="numberDescription">Loading...</p>
+        </section>
+
+        <!-- Visualizations -->
+        <div class="visualizations">
+
+            <!-- Time Scale -->
+            <div class="viz-card" id="timeViz">
+                <div class="viz-header-card">
+                    <h2>Time Scale</h2>
+                    <p class="viz-subtitle">If you counted 1 number per second...</p>
+                </div>
+                <div class="viz-content">
+                    <div class="time-display">
+                        <div class="time-value" id="timeValue">...</div>
+                        <div class="time-breakdown" id="timeBreakdown">...</div>
+                    </div>
+                    <div class="counter-demo">
+                        <div class="counter-label">Counting now:</div>
+                        <div class="counter" id="liveCounter">0</div>
+                        <div class="counter-progress">
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+                        <div class="counter-info">Watch how slow it is...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Physical Space -->
+            <div class="viz-card" id="physicalViz">
+                <div class="viz-header-card">
+                    <h2>Physical Space</h2>
+                    <p class="viz-subtitle">If each unit was a 1cm³ cube...</p>
+                </div>
+                <div class="viz-content">
+                    <div class="physical-comparisons">
+                        <div class="comparison-item">
+                            <div class="comparison-label">Volume</div>
+                            <div class="comparison-value" id="volumeValue">...</div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="comparison-label">Height (if stacked)</div>
+                            <div class="comparison-value" id="heightValue">...</div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="comparison-label">Comparison</div>
+                            <div class="comparison-value" id="sizeComparison">...</div>
+                        </div>
+                    </div>
+                    <div class="cube-viz" id="cubeViz">
+                        <!-- Canvas will be added by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparative Scale -->
+            <div class="viz-card" id="comparativeViz">
+                <div class="viz-header-card">
+                    <h2>Comparative Scale</h2>
+                    <p class="viz-subtitle">Your number vs. known quantities</p>
+                </div>
+                <div class="viz-content">
+                    <div class="comparison-bars" id="comparisonBars">
+                        <!-- Will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Human Scale -->
+            <div class="viz-card" id="humanViz">
+                <div class="viz-header-card">
+                    <h2>Human Scale</h2>
+                    <p class="viz-subtitle">If each unit was a person...</p>
+                </div>
+                <div class="viz-content">
+                    <div class="human-comparisons" id="humanComparisons">
+                        <!-- Will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer-text">
+                <a href="index.html">Try another number</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/visualizations.js"></script>
+    <script src="js/visualize.js"></script>
+</body>
+</html>

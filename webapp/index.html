@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale - Make Numbers Human</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1 class="logo">Scale</h1>
+            <p class="tagline">Make numbers human</p>
+        </header>
+
+        <!-- Problem Statement -->
+        <section class="problem">
+            <div class="number-display">
+                <span class="big-number" id="demoNumber">5,000,000,000</span>
+            </div>
+            <p class="question">How big is that number? Really?</p>
+            <p class="subtitle">Your brain can't tell. Let us show you.</p>
+        </section>
+
+        <!-- Interactive Demo -->
+        <section class="demo">
+            <button class="visualize-btn" id="demoBtn">
+                <span>Visualize It</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 4L14 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Try It -->
+        <section class="try-it">
+            <h2>Try any number</h2>
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="numberInput"
+                    placeholder="Enter a number (e.g., 1000000)"
+                    autocomplete="off"
+                />
+                <button id="goBtn">Go</button>
+            </div>
+            <div class="examples">
+                <span>Try: </span>
+                <button class="example-btn" data-number="1000000">1 million</button>
+                <button class="example-btn" data-number="1000000000">1 billion</button>
+                <button class="example-btn" data-number="7900000000">World population</button>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <h2>How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse the web</h3>
+                    <p>Read articles like you normally do</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Numbers are highlighted</h3>
+                    <p>Large numbers get a subtle underline</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Click to understand</h3>
+                    <p>See beautiful visualizations that make the scale tangible</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer-text">
+                Built with craft.
+                <a href="https://github.com/FinanceJT/Brainstorm" target="_blank">View source</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>
