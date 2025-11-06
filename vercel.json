@@ -1,0 +1,9 @@
+{
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": null,
+  "framework": null,
+  "outputDirectory": "webapp",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
